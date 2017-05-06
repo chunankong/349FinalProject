@@ -1,0 +1,20 @@
+@relation training
+
+@attribute 'preferred position' {top,jungle,mid,bot,support}
+@attribute 'current rank' numeric
+@attribute 'recent kda' numeric
+@attribute 'recent winrate' numeric
+@attribute 'recent P/kill' numeric
+@attribute 'highest champ wr' numeric
+@attribute 'highest champ cs' numeric 
+@attribute 'highest champ gold' numeric
+@attribute 'highest champ kda' numeric
+@attribute 'avg dmg' numeric
+@attribute 'avg turrent' numeric
+@attribute 'overall winrate' {high,medium,low}
+
+@data
+top,13.96,1.68,75,49,56,30.3,3.11,155517,0.56,56,high
+
+
+
