@@ -1,15 +1,14 @@
-import sys
 def main():
     entry_num = int(raw_input("Enter session count: "))
     while True:
-        print ("------- MESSAGE: enter summoner name or 'quit' to exit program -------")
+        print "------- MESSAGE: enter summoner name or 'quit' to exit program -------"
         username = raw_input("Enter: ")
         if username == "quit":
             return
 
         if check_usernames(username) is False:
             while True:
-                print ("------- MESSAGE: enter attributes or 'format' for format -------")
+                print "------- MESSAGE: enter attributes or 'format' for format -------"
                 entry = raw_input("Enter: ")
                 if entry == "reset":
                     break
@@ -19,7 +18,7 @@ def main():
                     f.close()
 
                     entry_num += 1
-                    print ("------- MESSAGE: no." + str(entry_num) + " summoner " + username + " is added to database -------")
+                    print "------- MESSAGE: no." + str(entry_num) + " summoner " + username + " is added to database -------"
                     break
 
 def check_usernames(username):
@@ -49,7 +48,7 @@ def add_entry(entry):
 
     entry_list = entry.split(',')
     if len(entry_list) != 11:
-        print ("------- ERROR: length of attributes is not correct -------")
+        print "------- ERROR: length of attributes is not correct -------"
         return False
 
     f = open("database.txt", "a")
